@@ -13,13 +13,13 @@ export class HomeService {
   constructor(private http: HttpClient) { }
 
   getImages() {
-    return this.http.get<Image[]>('http://localhost:8080/getAllImages');
+    return this.http.get<Image[]>('https://sumukh-barclays.herokuapp.com/getAllImages');
  
   }
 
 
   getBooks() {
-    return this.http.get<Book[]>('http://localhost:8080/get');
+    return this.http.get<Book[]>('https://sumukh-barclays.herokuapp.com/get');
  
   }
 
