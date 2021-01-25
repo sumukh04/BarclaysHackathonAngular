@@ -1,0 +1,21 @@
+<body>
+  <nav class="navbar navbar-dark bg-success fixed-top">
+    <a class="navbar-brand " href="#">Books Center</a>
+     <ul class="navbar-nav mr-auto">
+      <li>
+        <button type="button" routerLink="/cart" class="btn btn-info">
+          Cart <span class="badge badge-light">{{totalItems()}}</span>
+        </button>
+      </li>
+    </ul> 
+  <ul  class="navbar-nav" style="float:right;">
+      <li>
+        <button type="button" routerLink="/login" class="btn btn-info">
+          Login 
+        </button>
+      </li>
+    </ul> 
+  </nav>
+  
+<router-outlet></router-outlet>
+</body>
