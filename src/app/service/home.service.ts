@@ -28,7 +28,7 @@ export class HomeService {
   // }
 
   getProducts=()=>{
-    return this.http.get<Book[]>('http://localhost:8080/get');
+    return this.http.get<Book[]>('https://sumukh-barclays.herokuapp.com/get');
   }
 
   authenticationService = (username: String, password: String) =>{
